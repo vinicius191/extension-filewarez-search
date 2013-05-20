@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Warez-BB Search</title>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/Search.js" type="text/javascript"></script>
+    <link href="css/popup.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <img src="gfx/icons/icon128.png" width="75" height="75" /><br />
+    <div style="font-family: Verdana; font-size: large; width: 100%; text-align: center;">
+        Warez-BB Search
+    </div>
+    <div id="fail" style="color: Red">
+    </div>
+    <input type="text" id="SearchWord" name="SearchWord" maxlength="100" /><br />
+    <div id="selectOption">
+        <select name="search_forum" id="multiple" size="7" multiple="multiple">
+            <option value="-1">All available</option>
+            <optgroup label="Announcements">
+                <option value="2" selected="">|-- Important Announcements</option>
+                <option value="108" selected="">|---- Case Guidelines</option>
+                <option value="107" selected="">|-- 3 Million Members Celebrations</option>
+            </optgroup>
+            <optgroup label="Public">
+                <option value="40" selected="">|-- Introduction</option>
+                <option value="112" selected="">|-- Listings</option>
+                <option value="3" selected="">|---- Apps</option>
+                <option value="47" selected="">|---- All-In-One (AIO)</option>
+                <option value="9" selected="">|---- Freewares and Betas</option>
+                <option value="5" selected="">|---- Games</option>
+                <option value="28" selected="">|---- Console Games</option>
+                <option value="4" selected="">|---- Movies</option>
+                <option value="57" selected="">|---- TV Shows</option>
+                <option value="88" selected="">|---- Anime</option>
+                <option value="6" selected="">|---- Music</option>
+                <option value="38" selected="">|---- Music Videos</option>
+                <option value="7" selected="">|---- Templates and Scripts</option>
+                <option value="29" selected="">|---- Template Rips</option>
+                <option value="8" selected="">|---- eBooks</option>
+                <option value="83" selected="">|---- Tutorials</option>
+                <option value="91" selected="">|---- Audio</option>
+                <option value="105" selected="">|---- Mac</option>
+                <option value="106" selected="">|---- Mobile</option>
+                <option value="20" selected="">|---- Other OSes</option>
+                <option value="113" selected="">|-- Requests</option>
+                <option value="15" selected="">|---- Apps requests</option>
+                <option value="17" selected="">|---- Games requests</option>
+                <option value="16" selected="">|---- Movies &amp; TV Shows requests</option>
+                <option value="18" selected="">|---- Music requests</option>
+                <option value="19" selected="">|---- All other requests</option>
+                <option value="11" selected="">|-- Forum Comments</option>
+                <option value="82" selected="">|---- Wadio</option>
+                <option value="94" selected="">|---- The Scene</option>
+                <option value="76" selected="">|---- Milestones</option>
+                <option value="30" selected="">|-- Helpdesk</option>
+                <option value="10" selected="">|-- Off-Topic</option>
+                <option value="92" selected="">|---- Serious Discussions</option>
+                <option value="102" selected="">|---- Sports</option>
+                <option value="85" selected="">|---- News</option>
+                <option value="12" selected="">|-- Funstuff</option>
+                <option value="22" selected="">|-- Link Heaven</option>
+                <option value="118" selected="">|---- Services &amp; Giveaways</option>
+                <option value="63" selected="">|-- Graphics</option>
+                <option value="97" selected="">|---- Graphics Requests &amp; Helpdesk</option>
+                <option value="79" selected="">|-- Programming</option>
+                <option value="26" selected="">|-- Test Me</option>
+                <option value="24">|-- Graveyard</option>
+            </optgroup>
+        </select>
+        <form>
+        <table border="0" id="SearchTable">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="radio" name="search_fields" id="search_fields_all" value="all">
+                    </td>
+                    <td nowrap="nowrap" class="genmed">
+                        <label for="search_fields_all">&nbsp;Search topic title and message text</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="search_fields" id="search_fields_msgonly" value="msgonly">
+                    </td>
+                    <td nowrap="nowrap" class="genmed">
+                        <label for="search_fields_msgonly">&nbsp;Search message text only</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="search_fields" id="search_fields_titleonly" value="titleonly"
+                            checked="checked"></td>
+                    <td nowrap="nowrap" class="genmed">
+                        <label for="search_fields_titleonly">&nbsp;Search topic title only</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="search_fields" id="search_fields_firstpost" value="firstpost">
+                    </td>
+                    <td nowrap="nowrap" class="genmed">
+                        <label for="search_fields_firstpost">&nbsp;First post of topics only</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+    </div>
+    <input type="submit" name="SearchSubmit" id="SearchSubmit" value="Search" />
+    <div style="font-family: Verdana; font-size: 9px;">
+        Extension <b>not</b> made by Warez-BB staff
+    </div>
+</body>
+</html>
